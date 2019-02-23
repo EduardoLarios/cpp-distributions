@@ -11,7 +11,7 @@ Examples of using several distribution functions in C++
   * Congruencia Lineal          -> Esta en python, no C++
 * Distribuciones
   * Normal                      ✅
-  * Gamma                       ❌
+  * Gamma                       ✅
   * Uniforme                    ❌
   * Triangular                  ❌
   * Weibull                     ❌
