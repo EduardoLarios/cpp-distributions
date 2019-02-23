@@ -2,8 +2,8 @@
 Examples of using several distribution functions in C++
 
 # Lista
-* Estadística                   
-* Ordenar                       ❌
+* Estadística                   ✅
+* Ordenar                       ✅
 * aleatorios                    ❌
 * Bayes
 * Generación de Aleatorios
