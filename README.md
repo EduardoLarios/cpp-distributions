@@ -1,21 +1,19 @@
 # Cuantitative Methods
 Examples of using several distribution functions in C++
 
-# Lista
-* Estadística                   ✅
-* Ordenar                       ✅
-* aleatorios                    ❌
-* Bayes                         ✅
-* Generación de Aleatorios
-  * Newman                      ✅
-  * Congruencia Lineal          -> Esta en python, no C++
-* Distribuciones
-  * Normal                      ✅
-  * Gamma                       ✅
-  * Uniforme                    ❌
-  * Triangular                  ❌
-  * Weibull                     ❌
-  * Montecarlo                  ❌
-* Pruebas de Ajuste
-  * chi ^2                      ❌
-  * kolmogorov                  ❌
+| Métodos            	| Estatus 	|
+|--------------------	|---------	|
+| Estadística        	| ✅       	|
+| Ordenamiento       	| ✅       	|
+| NúmerosAleatorios  	| ❌       	|
+| Teorema de Bayes   	| ✅       	|
+| Newmann Cuadrado   	| ✅       	|
+| Congruencia Lineal 	| ❌       	|
+| Dist. Normal       	| ✅       	|
+| Dist. Gamma        	| ✅       	|
+| Dist. Uniforme     	| ❌       	|
+| Dist. Triangular   	| ❌       	|
+| Dist. Weibull      	| ✅       	|
+| Dist. Montecarlo   	| ❌       	|
+| Pruebas chi^2      	| ❌       	|
+| Pruebas Kolmogorov 	| ❌       	|
