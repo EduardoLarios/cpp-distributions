@@ -50,6 +50,6 @@ int main(int argc, char **argv)
     cout << arrx[i] << " ";
   }
   cout << endl;
-  
+
   free(arrx);
 }
