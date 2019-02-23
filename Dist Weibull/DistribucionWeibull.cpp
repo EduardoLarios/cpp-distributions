@@ -8,7 +8,7 @@ using namespace std;
 int main()
 {
     const int nstars = 100;   // maximum number of stars to distribute
-    int digits, i, iterations;
+    int i, iterations;
 
     default_random_engine generator;
     weibull_distribution<double> distribution(2.0, 4.0);
