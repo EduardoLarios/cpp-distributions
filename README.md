@@ -1,4 +1,4 @@
-# cpp-distributions
+# Cuantitative Methods
 Examples of using several distribution functions in C++
 
 # Lista
