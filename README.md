@@ -11,7 +11,7 @@ Examples of using several distribution functions in C++
 | Congruencia Lineal 	| ✅       	|
 | Dist. Normal       	| ✅       	|
 | Dist. Gamma        	| ✅       	|
-| Dist. Uniforme     	| ❌       	|
+| Dist. Uniforme     	| ✅       	|
 | Dist. Triangular   	| ❌       	|
 | Dist. Weibull      	| ✅       	|
 | Dist. Montecarlo   	| ❌       	|
