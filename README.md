@@ -7,8 +7,8 @@ Examples of using several distribution functions in C++
 * aleatorios                    ❌
 * Bayes
 * Generación de Aleatorios
-  * Newman                      ❌
-  * Congruencia Lineal          ❌
+  * Newman                      ✅
+  * Congruencia Lineal          -> Esta en python, no C++
 * Distribuciones
   * Normal                      ❌
   * Gamma                       ❌
