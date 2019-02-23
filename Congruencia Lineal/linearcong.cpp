@@ -26,52 +26,42 @@ using namespace std;
 #include <algorithm>
 #include <math.h>
 
+long long int linearCong(long long int x, long long int a, long long int c, long long int m)
+{
 
-long long int linearCong(long long int x, long long int a, long long int c, long long int m){
-
-	//cout << ((x*a)+c) << "/" << m << endl;
+    //cout << ((x*a)+c) << "/" << m << endl;
     //x = lambda a: -1*(math.log(1-a))/(1) #-ln(1-Ri)/lambda(1) For exponencial distribution values
     //X= a + Ri (b-a)
     // Falta distribucion de Weibull
     //print(x(it))
-	return ((x*a)+c)%m;
-
+    return ((x * a) + c) % m;
 }
 
-int main(){
-	long long int x,a,c,m,s = 0;
-	cout << "Input x ->\t";
-	cin >> x;
-	cout << "Input a ->\t";
-	cin >> a;
-	cout << "Input c ->\t";
-	cin >> c;
-	cout << "Input m ->\t";
-	cin >> m;
+int main()
+{
+    long long int x, a, c, m, s = 0;
+    cout << "Input x ->\t";
+    cin >> x;
+    cout << "Input a ->\t";
+    cin >> a;
+    cout << "Input c ->\t";
+    cin >> c;
+    cout << "Input m ->\t";
+    cin >> m;
     cout << "Size Array m ->\t";
-	cin >> s;
-    long long int* arr = (long long int *)calloc(s, sizeof(long long int)); 
+    cin >> s;
+    long long int *arr = (long long int *)calloc(s, sizeof(long long int));
 
-    arr[0]=linearCong(x,a,c,m);
+    arr[0] = linearCong(x, a, c, m);
 
-    for (int i =1 ; i<s; i++){
-        arr[i]=linearCong(arr[i-1],a,c,m);
-    }
-    for(size_t i = 0; i < s; i++)
+    for (int i = 1; i < s; i++)
     {
-        cout<< "Element " << i << " -> " << arr[i] << endl;
-        /* code */
+        arr[i] = linearCong(arr[i - 1], a, c, m);
+    }
+    for (size_t i = 0; i < s; i++)
+    {
+        cout << "Element " << i << " -> " << arr[i] << endl;
     }
 
     free(arr);
-    
-
-
-
-
-    
-    
-    
-	
-
 }
