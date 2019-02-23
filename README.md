@@ -5,12 +5,12 @@ Examples of using several distribution functions in C++
 * Estadística                   ✅
 * Ordenar                       ✅
 * aleatorios                    ❌
-* Bayes
+* Bayes                         ✅
 * Generación de Aleatorios
   * Newman                      ✅
   * Congruencia Lineal          -> Esta en python, no C++
 * Distribuciones
-  * Normal                      ❌
+  * Normal                      ✅
   * Gamma                       ❌
   * Uniforme                    ❌
   * Triangular                  ❌
