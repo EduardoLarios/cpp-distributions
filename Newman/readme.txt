@@ -1,5 +1,7 @@
 Input:
- Number
+- Seed value
+- Number of seed digits
+- Number of values to be output
 
 Output:
  Iterations 
