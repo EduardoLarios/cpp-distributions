@@ -8,7 +8,7 @@ Examples of using several distribution functions in C++
 | NúmerosAleatorios  	| ❌       	|
 | Teorema de Bayes   	| ✅       	|
 | Newmann Cuadrado   	| ✅       	|
-| Congruencia Lineal 	| ❌       	|
+| Congruencia Lineal 	| ✅       	|
 | Dist. Normal       	| ✅       	|
 | Dist. Gamma        	| ✅       	|
 | Dist. Uniforme     	| ❌       	|
