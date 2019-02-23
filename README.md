@@ -14,7 +14,7 @@ Examples of using several distribution functions in C++
   * Gamma                       ✅
   * Uniforme                    ❌
   * Triangular                  ❌
-  * Weibull                     ❌
+  * Weibull                     ✅
   * Montecarlo                  ❌
 * Pruebas de Ajuste
   * chi ^2                      ❌
