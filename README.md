@@ -10,7 +10,7 @@ Examples of using several distribution functions in C++
   * Newman                      ✅
   * Congruencia Lineal          -> Esta en python, no C++
 * Distribuciones
-  * Normal                      ❌
+  * Normal                      ✅
   * Gamma                       ❌
   * Uniforme                    ❌
   * Triangular                  ❌
