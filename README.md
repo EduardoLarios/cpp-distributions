@@ -17,3 +17,5 @@ Examples of using several distribution functions in C++
 | Dist. Montecarlo   	| ✅       	|
 | Pruebas chi^2      	| ✅       	|
 | Pruebas Kolmogorov 	| ❌       	|
+
+Ex?

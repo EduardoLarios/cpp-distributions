@@ -1,11 +1,3 @@
-/*------------------------------------------------------------------------
-*
-* Metodos Cuatitativos: Metodo Directo para generar variables aleatorias
-* Fecha: 15-Feb-2019
-* Autor: A00569364 Eduardo Larios Fernández
-* Procesamiento Paralelo con OpenMP
-*
-*-------------------------------------------------------------------------*/
 
 #include <math.h>
 #include <stdio.h>
@@ -33,7 +25,7 @@ int main()
   printf("Starting...\n");
   start_timer();
 
-  #pragma omp parallel for shared(hits) private(i, x, y, z)
+  //#pragma omp parallel for shared(hits) private(i, x, y, z)
   for (i = 0; i < tosses; i++)
   {
     x = (double)rand() / RAND_MAX;
