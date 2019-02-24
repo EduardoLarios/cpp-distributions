@@ -18,4 +18,11 @@ Examples of using several distribution functions in C++
 | Pruebas chi^2      	| ✅       	|
 | Pruebas Kolmogorov 	| ❌       	|
 
-Ex?
+# First Partial Exam
+| Ejercicio | Estatus |
+| --------- | ------- |
+| Congruencia Lineal | ❌ |
+| Hipótesis Nula | ❌ |
+| Probabilidades Bayesianas | ❌ | 
+| Estimación Montecarlo | ❌ |
+
