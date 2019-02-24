@@ -1,11 +1,9 @@
-
-
 #include <iostream>
-using namespace std;
 #include <unordered_map>
 #include <algorithm>
 #include <math.h>
 
+using namespace std;
 
 long long int linearCong(long long int x, long long int a, long long int c, long long int m){
 

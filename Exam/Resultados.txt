@@ -1,0 +1,80 @@
+Eduardo Larios Fernandez
+A00569364 - 23/FEB/2019
+
+Pregunta 1
+Input:
+Seed -> 9364
+A -> 15245
+C -> 27893
+Mod -> 32768
+
+10) 0.27896
+20) 0.32145
+30) 0.00025
+40) 0.27896
+50) 0.32145
+60) 0.00025
+70) 0.27896
+80) 0.32145
+90) 0.00025
+100) 0.27896
+
+Mediana: 0.27896
+Promedio: 0.200407
+Max: 0.32421
+Min: 0.00025
+Deviation: 0.00025
+
+Pregunta 2
+Input 
+Seed -> 9364
+A -> 15245
+C -> 27893
+Mod -> 32768
+
+Rango            Frecuencia
+[0.0 - 0.1)      33
+[0.1 - 0.2)      1
+[0.2 - 0.3)      34
+[0.3 - 0.4)      33
+[0.4 - 0.5)      0
+[0.5 - 0.6)      0
+[0.6 - 0.7)      0
+[0.7 - 0.8)      0
+[0.8 - 0.9)      0
+[0.9 - 1.0]      0
+
+X2 = 231.500000
+Se rechaza
+
+Parte 3
+Input
+Porcentajes:
+Iphone : 0.87
+choque/iphone: 0.67
+no choque/iphone : 0.33
+
+Otros : 0.13
+choque/otro : 0.70
+no choque/otro : 0.30
+
+Resultados:
+Porcentaje de iphone/choque: 0.5829
+Porcentaje de iphone/no choque: 0.2871
+
+Porcentaje de otro/choque: 0.091
+Porcentaje de otro/no choque: 0.039
+
+Parte 4
+Ingresar Limite de Iteraciones: 8
+1 iterations: 0.000000
+2 iterations: 0.500000
+3 iterations: 0.666667
+4 iterations: 0.750000
+5 iterations: 0.600000
+6 iterations: 0.833333
+7 iterations: 0.857143
+8 iterations: 0.750000
+
+Los porcentajes aumentan conforme mas variables aleatorias se usen
+Asi tambien los porcentajes aumentan mientras mas iteraciones se realicen.

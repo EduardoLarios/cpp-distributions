@@ -36,7 +36,7 @@ void congruencia(){
     int semilla, a, c, n, m, x, i = 0;
     float r;
 
-    cout << "Introduce el número de valores: ";
+    cout << "Introduce el numero de valores: ";
     cin >> n;
 
     cout << "Introduce la semilla: ";
@@ -48,7 +48,7 @@ void congruencia(){
     cout << "Introduce el valor del incremento (c): ";
     cin >> c;
 
-    cout << "Introduce el valor del módulo (m): ";
+    cout << "Introduce el valor del modulo (m): ";
     cin >> m;
 
     cout << endl;
@@ -75,7 +75,7 @@ int main(){
     float a, x, chi;
     printf("\nLLENAR VALORES DE CONGRUENCIA\n");
     congruencia();
-    cout << "Introduce el número de datos: ";
+    cout << "Introduce el numero de datos: ";
     cin >> num;
 
     cout << "Introduce el nivel de confianza: ";
