@@ -5,7 +5,7 @@ Examples of using several distribution functions in C++
 |--------------------	|---------	|
 | Estadística        	| ✅       	|
 | Ordenamiento       	| ✅       	|
-| NúmerosAleatorios  	| ❌       	|
+| NúmerosAleatorios  	| ✅       	|
 | Teorema de Bayes   	| ✅       	|
 | Newmann Cuadrado   	| ✅       	|
 | Congruencia Lineal 	| ✅       	|
@@ -14,6 +14,6 @@ Examples of using several distribution functions in C++
 | Dist. Uniforme     	| ✅       	|
 | Dist. Triangular   	| ✅       	|
 | Dist. Weibull      	| ✅       	|
-| Dist. Montecarlo   	| ❌       	|
+| Dist. Montecarlo   	| ✅       	|
 | Pruebas chi^2      	| ✅       	|
 | Pruebas Kolmogorov 	| ❌       	|
