@@ -52,7 +52,7 @@ int main(int argc, char const *argv[])
         {
             pi = montecarlo(number_of_tosses);
         }
-        printf("%i iterations  (N) -> Pi: %Lf  \n", number_of_tosses + 1, pi);
+        printf("%i (N) -> Resultados: %Lf  \n", number_of_tosses + 1, pi);
         number_of_tosses = number_of_tosses + 1;
     }
     //printf("%Lf\n", pi);
