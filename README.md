@@ -1,5 +1,5 @@
 # Cuantitative Methods
-Examples of using several distribution functions in C++
+Examples of multiple cuantitative methods in C++
 
 | Métodos            	| Estatus 	|
 |--------------------	|---------	|
