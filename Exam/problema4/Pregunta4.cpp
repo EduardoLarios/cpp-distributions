@@ -47,10 +47,18 @@ int main(int argc, char const *argv[])
 
     while (number_of_tosses <= maxiter)
     {
+<<<<<<< HEAD
         
         acum = montecarlo(number_of_tosses);
 
         printf("%i iterations: %Lf  \n", number_of_tosses, acum);
+=======
+        for (i = 0; i < N; i++)
+        {
+            pi = montecarlo(number_of_tosses);
+        }
+        printf("%i (N) -> Resultados: %Lf  \n", number_of_tosses + 1, pi);
+>>>>>>> a3efb15e612807fa84421c931f17e88bf6c3c2fd
         number_of_tosses = number_of_tosses + 1;
     }
 
