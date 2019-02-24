@@ -1,4 +1,3 @@
-// weibull_distribution
 #include <iostream>
 #include <random>
 #include <string>

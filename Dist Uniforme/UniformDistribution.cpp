@@ -1,4 +1,3 @@
-// uniform_real_distribution
 #include <iostream>
 #include <random>
 #include <string>

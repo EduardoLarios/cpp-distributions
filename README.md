@@ -17,13 +17,13 @@ Examples of using several distribution functions in C++
 | Dist. Weibull      	| ✅       	|
 | Dist. Montecarlo   	| ✅       	|
 | Pruebas chi^2      	| ✅       	|
-| Pruebas Kolmogorov 	| ❌       	|
+| Pruebas Kolmogorov 	| ✅      	|
 
 # First Partial Exam
 | Ejercicio | Estatus |
 | --------- | ------- |
-| Congruencia Lineal | ❌ |
+| Congruencia Lineal | ✅ |
 | Hipótesis Nula | ❌ |
-| Probabilidades Bayesianas | ❌ | 
+| Probabilidades Bayesianas | ✅ | 
 | Estimación Montecarlo | ❌ |
 
