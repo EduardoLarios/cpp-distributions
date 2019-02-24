@@ -77,7 +77,8 @@ int main(int argc, char *argv[])
 
     cout << endl
          << "Linear Congruence:" << endl
-         << "=========" << endl;
+         << "==================" << endl;
+         
     cout << "Ingresa el valor de la semilla: ";
     cin >> seed;
 
@@ -103,7 +104,7 @@ int main(int argc, char *argv[])
     }
 
     sort(arr, arr + 101);
-
+    cout << endl; 
     for (int x = 0; x < 101; x++)
     {
         cout << x + 1 << ") " << arr[x] << endl;

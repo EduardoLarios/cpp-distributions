@@ -10,6 +10,7 @@ Examples of using several distribution functions in C++
 | Newmann Cuadrado   	| ✅       	|
 | Congruencia Lineal 	| ✅       	|
 | Dist. Normal       	| ✅       	|
+| Dist. Exponencial     | ✅       	|
 | Dist. Gamma        	| ✅       	|
 | Dist. Uniforme     	| ✅       	|
 | Dist. Triangular   	| ✅       	|
