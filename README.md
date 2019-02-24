@@ -23,7 +23,7 @@ Examples of using several distribution functions in C++
 | Ejercicio | Estatus |
 | --------- | ------- |
 | Congruencia Lineal | ✅ |
-| Hipótesis Nula | ❌ |
+| Hipótesis Nula | ✅ |
 | Probabilidades Bayesianas | ✅ | 
-| Estimación Montecarlo | ❌ |
+| Estimación Montecarlo | ✅ |
 
