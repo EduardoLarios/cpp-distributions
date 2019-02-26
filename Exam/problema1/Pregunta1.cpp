@@ -21,59 +21,69 @@ class linearGen
     }
 };
 
-void mediana(float arr[], int size)
+float mediana(float data[], int length)
 {
     int m, imp;
     float prom;
 
-    if (size % 2 == 1)
+    if (length % 2 == 1)
     {
-        m = (size / 2) + .5;
-        printf("\nMediana: %.1f", arr[m]);
+        m = (length / 2) + .5;
+        return data[m];
     }
 
     else
     {
-        imp = (size / 2);
-        prom = (arr[imp] + arr[imp + 1]) / 2;
-        printf("\nMediana: %.1f\n", prom);
+        imp = (length / 2);
+        prom = (data[imp] + data[imp + 1]) / 2;
+        return prom;
     }
 }
 
-void promedio(float num[])
+float promedio(float data[], int length)
 {
-    int n, i;
     float sum = 0.0, avg;
+    
+    for (int i = 0; i < length; i++)
+        sum += data[i];
+    avg = sum / length;
 
-    n = 101;
-    for (i = 0; i < n; i++)
-        sum += num[i];
-    avg = sum / n;
-    cout << "\nPromedio: " << avg;
+    return avg;
 }
 
-float calculateSD(float data[])
+float varianza(float mean, float data[], int length)
+{
+    float sum = 0;
+
+    for (int i = 0; i < length; i++)
+    {
+        sum += pow((data[i] - mean), 2);
+    }
+
+    return sum / length;
+}
+
+float desviacion(float data[], int length)
 {
     float sum = 0.0, mean, standardDeviation = 0.0;
-    int i;
 
-    for (i = 0; i < 101; ++i)
+    for (int i = 0; i < length; ++i)
     {
         sum += data[i];
     }
 
-    mean = sum / 101;
+    mean = sum / length;
 
-    for (i = 0; i < 101; ++i)
+    for (int i = 0; i < length; ++i)
         standardDeviation += pow(data[i] - mean, 2);
 
-    return sqrt(standardDeviation / 101);
+    return sqrt(standardDeviation / length);
 }
 
 int main(int argc, char *argv[])
 {
-    float arr[101];
-    int seed, a, c, mod;
+    float data[101], avg, med;
+    int seed, a, c, mod, n;
 
     cout << endl
          << "Linear Congruence:" << endl
@@ -91,34 +101,40 @@ int main(int argc, char *argv[])
     cout << "Ingresa el valor de modulo: ";
     cin >> mod;
 
+    cout << "Ingresa el numero de elementos: ";
+    cin >> n;
+
     linearGen generator(seed, a, c, mod);
 
-    for (int x = 0; x < 101; x++)
+    for (int x = 0; x < n; x++)
     {
-        arr[x] = generator.rnd();
+        data[x] = generator.rnd();
     }
 
-    for (int x = 0; x < 101; x++)
+    for (int x = 0; x < n; x++)
     {
-        arr[x] = arr[x] / 32768;
+        data[x] = data[x] / 32768;
     }
 
-    sort(arr, arr + 101);
+    sort(data, data + n);
     cout << endl; 
-    for (int x = 0; x < 101; x++)
+    for (int x = 0; x < n; x++)
     {
-        cout << x + 1 << ") " << arr[x] << endl;
+        cout << x + 1 << ") " << data[x] << endl;
     }
 
     cout << endl;
-    cout << "Min: " << arr[0] << endl;
-    cout << "Max: " << arr[100] << endl;
+    cout << "Min: " << data[0] << endl;
+    cout << "Max: " << data[n-1] << endl;
 
-    mediana(arr, 101);
-    promedio(arr);
+    med = mediana(data, n);
+    avg = promedio(data, n);
 
     cout << endl;
-    cout << "Deviation: " << calculateSD(arr);
+    cout << "Promedio: " << avg << endl;
+    cout << "Mediana: " << med << endl;
+    cout << "Varianza: " << varianza(avg, data, n) << endl;
+    cout << "Desviacion: " << desviacion(data, n) << endl;
     cout << endl << endl;
 
     system("pause");
