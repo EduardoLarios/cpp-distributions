@@ -106,21 +106,21 @@ int main(int argc, char *argv[])
 
     linearGen generator(seed, a, c, mod);
 
-    for (int x = 0; x < n; x++)
+    for (int i = 0; i < n; i++)
     {
-        data[x] = generator.rnd();
+        data[i] = generator.rnd();
     }
 
-    for (int x = 0; x < n; x++)
+    for (int i = 0; i < n; i++)
     {
-        data[x] = data[x] / 32768;
+        data[i] = data[i] / 32768;
     }
 
     sort(data, data + n);
     cout << endl; 
-    for (int x = 0; x < n; x++)
+    for (int i = 0; i < n; i++)
     {
-        cout << x + 1 << ") " << data[x] << endl;
+        cout << i + 1 << ") " << data[i] << endl;
     }
 
     cout << endl;
