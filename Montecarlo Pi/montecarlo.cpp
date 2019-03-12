@@ -7,6 +7,7 @@
 int main()
 {
   /* # of points in the 1st quadrant the circle */
+  time_t t;
   long long int tosses, hits = 0;
   int n;
   double x, y, z, pi;
