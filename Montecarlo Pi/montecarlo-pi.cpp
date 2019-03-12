@@ -3,35 +3,41 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include "header.h"
 
 int main()
 {
   /* # of points in the 1st quadrant the circle */
+  time_t t;
+  int i;
+  double ms = 0;
   long long int tosses, hits = 0;
-  int n;
-  double x, y, z, pi;
+  double x, y;
+  double z, pi;
 
-  printf("Ingrese el numero de variables: ");
+  printf("Ingrese el numero de variables para estimar PI: ");
   scanf("%lld", &tosses);
-  printf("Ingrese el valor de N: ");
-  scanf("%i", &n);
 
   /* initialize random numbers */
   srand((unsigned)time(&t));
 
   printf("Starting...\n");
+  start_timer();
 
   //#pragma omp parallel for shared(hits) private(i, x, y, z)
-  for (int i = 0; i < tosses; i++)
+  for (i = 0; i < tosses; i++)
   {
-    x = (double)rand() / (double)RAND_MAX;
-    y = (double)rand() / (double)RAND_MAX;
-    z = pow(x, n) + pow(y, n);
-    if (z <= 1.0) hits++;
+    x = (double)rand() / RAND_MAX;
+    y = (double)rand() / RAND_MAX;
+    z = x * x + y * y;
+    if (z <= 1) hits++;
   }
 
-  pi = (double)hits / (double)tosses * 4;
+  ms = stop_timer();
+
+  pi = (double)hits / tosses * 4;
   printf("Numero de variables: %lld\nPi value: %g \n", tosses, pi);
+  printf("Tiempo tomado: %.5lf ms\n", ms);
 
   return 0;
 
